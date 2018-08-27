@@ -1,8 +1,11 @@
-package ConstructorInjection;
+package FieldInjection;
 
 import javax.inject.Inject;
 
 public class Project {
+
+    @Inject
+    ProjectNetwork network;
 
     private Mobile mobile;
     private QE qe;
@@ -11,6 +14,10 @@ public class Project {
     public Project(Mobile mobile, QE qe) {
         this.mobile = mobile;
         this.qe = qe;
+    }
+
+    public ProjectNetwork getNetwork() {
+        return network;
     }
 
     private void findResource() {

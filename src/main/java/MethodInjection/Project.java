@@ -1,4 +1,4 @@
-package ConstructorInjection;
+package MethodInjection;
 
 import javax.inject.Inject;
 
@@ -7,10 +7,21 @@ public class Project {
     private Mobile mobile;
     private QE qe;
 
+    ProjectNetwork network;
+
+    @Inject
+    public void setNetwork(ProjectNetwork network) {
+        this.network = network;
+    }
+
     @Inject
     public Project(Mobile mobile, QE qe) {
         this.mobile = mobile;
         this.qe = qe;
+    }
+
+    public ProjectNetwork getNetwork() {
+        return network;
     }
 
     private void findResource() {

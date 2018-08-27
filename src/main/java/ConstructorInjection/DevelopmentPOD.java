@@ -1,15 +1,16 @@
-package DependencyInjection;
+package ConstructorInjection;
+
+import dagger.Component;
+
+@Component
+interface PODComponent {
+    Project getProject();
+}
 
 public class DevelopmentPOD {
-    private static Mobile mobile;
-    private static QE qe;
-
     public static void main(String[] args) {
-
-        mobile = new Mobile();
-        qe = new QE();
-
-        Project project = new Project(mobile, qe);
-        project.startProject();
+      PODComponent component = DaggerPODComponent.create();
+      Project project = component.getProject();
+      project.startProject();
     }
 }

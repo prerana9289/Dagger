@@ -1,4 +1,4 @@
-package DependencyInjection;
+package ConstructorInjection;
 
 public interface IStudio {
 

@@ -1,4 +1,4 @@
-package FieldInjection;
+package MethodInjection;
 
 class Asset {
     private String assetType;

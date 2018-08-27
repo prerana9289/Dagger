@@ -1,4 +1,4 @@
-package ConstructorInjection;
+package FieldInjection;
 
 public interface IStudio {
 

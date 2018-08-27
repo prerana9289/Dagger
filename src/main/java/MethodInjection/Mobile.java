@@ -1,4 +1,4 @@
-package ConstructorInjection;
+package MethodInjection;
 
 import javax.inject.Inject;
 

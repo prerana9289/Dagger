@@ -1,4 +1,4 @@
-package FieldInjection;
+package MethodInjection;
 
 import dagger.Module;
 import dagger.Provides;

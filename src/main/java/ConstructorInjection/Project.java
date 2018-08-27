@@ -1,10 +1,13 @@
-package DependencyInjection;
+package ConstructorInjection;
+
+import javax.inject.Inject;
 
 public class Project {
 
     private Mobile mobile;
     private QE qe;
 
+    @Inject
     public Project(Mobile mobile, QE qe) {
         this.mobile = mobile;
         this.qe = qe;

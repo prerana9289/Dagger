@@ -1,6 +1,12 @@
-package DependencyInjection;
+package ConstructorInjection;
+
+import javax.inject.Inject;
 
 public class QE implements IStudio {
+
+    @Inject
+    public QE() {
+    }
 
     @Override
     public void findResource() {

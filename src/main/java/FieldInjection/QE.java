@@ -1,4 +1,4 @@
-package ConstructorInjection;
+package FieldInjection;
 
 import javax.inject.Inject;
 

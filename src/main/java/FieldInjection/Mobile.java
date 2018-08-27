@@ -1,8 +1,15 @@
-package ConstructorInjection;
+package FieldInjection;
 
 import javax.inject.Inject;
 
 public class Mobile implements IStudio {
+
+    @Inject
+    Asset asset;
+
+    public Asset getAsset() {
+        return asset;
+    }
 
     @Inject
     public Mobile() {
